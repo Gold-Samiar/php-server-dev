@@ -1,0 +1,43 @@
+<title metakeywords="AMP Server in PHP,PHP" 
+ metadescription="AMP Server in PHP,PHP" 
+ metaclassification="AMP Server in PHP,PHP" 
+  id="tit1" runat="server" >
+AMP Server in PHP
+</title>
+
+<div class="row">
+<div class="col">
+  <h1 class="text-center">AMP Dev Server</h1>
+  <button id="btnap" class="btn btn-primary">Run Server</button>
+  <button id="btnap2" class="btn btn-primary" disabled="disabled">Stop Server</button>
+  <button id="btnap3" class="btn btn-primary" onclick="getURL('index-edit.html')">Settings</button>
+  <div><a id="alink"></a></div>
+</div>
+</div>
+<br />
+<div class="row">
+  <div class="col">
+  <div id="nconsole" style="height: 440px; background-color: black; color: white;overflow: scroll;"></div>
+</div>
+</div>
+<span id="ws1" runat="server" path="libpath/comp/ajax/SocketNative.php">wsocket</span>
+<script runas="jscode">
+  var blnopen = false;    
+  function callNativeApp(ctrl,evt="",evtp="",data={}){
+      if(blnopen) index_front1.getComponent('ws1').callProcessApp(ctrl,evt,evtp,data);
+  }
+  $("#btnap").on("click",function(){
+    callNativeApp('apache2');
+    callNativeApp('mysql');
+  });
+  $("#btnap2").on("click",function(){
+    callNativeApp('apache2','stopapache2');
+    callNativeApp('mysql','stopmysql');
+  });
+</script>
+<script runas="jsfunctioncode" function="js_event_ws1_msg">
+  if(evtp == 'sopen'){
+      blnopen = true;
+  }
+  $("#nconsole").append('<p>' + evtp + '</p>');
+</script>

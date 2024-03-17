@@ -1,0 +1,68 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "4ba2fb5372efe76c21ebf2d0a00d3633",
+    "packages": [
+        {
+            "name": "sartajphp/sartajphp",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Gold-Samiar/SartajPHP-Framework.git",
+                "reference": "4ab27025465d0b88a33646f4db78f5baa6a95a2a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Gold-Samiar/SartajPHP-Framework/zipball/4ab27025465d0b88a33646f4db78f5baa6a95a2a",
+                "reference": "4ab27025465d0b88a33646f4db78f5baa6a95a2a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "default-branch": true,
+            "bin": [
+                "demo/start.php"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "SartajPHP Contributors",
+                    "homepage": "https://github.com/sartaj-singh/SartajPHP-Framework/graphs/contributors"
+                },
+                {
+                    "name": "Sartaj Singh",
+                    "homepage": "http://www.sartajsingh.com"
+                },
+                {
+                    "name": "Sartaj PHP Website",
+                    "homepage": "http://www.sartajphp.com"
+                }
+            ],
+            "description": "SartajPHP PHP Framework.",
+            "support": {
+                "issues": "https://github.com/Gold-Samiar/SartajPHP-Framework/issues",
+                "source": "https://github.com/Gold-Samiar/SartajPHP-Framework/tree/master"
+            },
+            "time": "2024-03-14T19:18:54+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "sartajphp/sartajphp": 20
+    },
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}

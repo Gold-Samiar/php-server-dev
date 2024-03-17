@@ -1,0 +1,29 @@
+{
+  "name": "sphpdesk",
+  "version": "1.2.4",
+  "description": "Sartaj PHP Desktop Interface",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": "github:Gold-Samiar/sphpdesk",
+  "bugs": "https://github.com/Gold-Samiar/sphpdesk/issues",
+  "bin": {
+    "sphpdesk": "cli.js"
+  },
+  "scripts": {
+    "sphpdesk": "node .",
+    "postinstall": "node ./postinstall.js"
+  },
+"keywords": [
+    "php",
+    "sartajphp",
+    "framework",
+    "server",
+    "sphp",
+    "sphpserver",
+    "sphpdesk"
+  ],
+  "author": "Gold Samiar",
+  "dependencies": {
+    "extract-zip": "^2.0.1"
+  }
+}
