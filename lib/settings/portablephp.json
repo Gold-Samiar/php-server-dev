@@ -1,6 +1,6 @@
 {
 	"http_port": 8080,
-	"mysql_port": 3307,
+	"mysql_port": 3306,
 	"wwwdir": "{path}/root",
 	"binpath": "{path}"
 }

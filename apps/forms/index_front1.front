@@ -28,11 +28,11 @@ AMP Server in PHP
   }
   $("#btnap").on("click",function(){
     callNativeApp('apache2');
-    callNativeApp('mysql');
+    //callNativeApp('mysql');
   });
   $("#btnap2").on("click",function(){
     callNativeApp('apache2','stopapache2');
-    callNativeApp('mysql','stopmysql');
+    //callNativeApp('mysql','stopmysql');
   });
 </script>
 <script runas="jsfunctioncode" function="js_event_ws1_msg">

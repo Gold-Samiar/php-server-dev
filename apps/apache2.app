@@ -113,7 +113,7 @@ class apache2 extends Sphp\tools\NativeApp{
         $this->settings = json_decode($strData,true);
 
         $this->writePHPConfig($libfolder);
-        $this->writeMySQLConfig($libfolder);
+        //$this->writeMySQLConfig($libfolder);
 
         $strData = file_get_contents($libfolder . "/settings/httpd.conf");
         $strData = str_replace("{path}", $this->settings["binpath"],$strData);
